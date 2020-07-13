@@ -14,7 +14,7 @@
     <div class="md-form mb-2">
         <mdb-icon fas icon="info-circle" class="prefix grey-text" ></mdb-icon>
         <input type="text" id="form2" class="form-control-sm" [formControl]="editTaskName" mdbInput mdbValidate>
-        <label for="form2"  mdbTooltip="Basic tooltip" placement="right">Category Name</label>
+        <label for="form2"  mdbTooltip="Basic tooltip" placement="right">Task Name</label>
         <mdb-error *ngIf="editTaskName.invalid && (editTaskName.dirty || editTaskName.touched)">
             Input invalid
         </mdb-error>
@@ -27,7 +27,7 @@
     <div class="md-form mb-2">
         <mdb-icon fas icon="info-circle" class="prefix grey-text" ></mdb-icon>
         <input type="text" id="form2" class="form-control-sm" [formControl]="editTaskDescription" mdbInput mdbValidate>
-        <label for="form2"  mdbTooltip="Basic tooltip" placement="right">Category Name</label>
+        <label for="form2"  mdbTooltip="Basic tooltip" placement="right">Task description</label>
         <mdb-error *ngIf="editTaskDescription.invalid && (editTaskDescription.dirty || editTaskDescription.touched)">
             Input invalid
         </mdb-error>
