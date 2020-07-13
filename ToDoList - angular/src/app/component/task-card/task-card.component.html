@@ -1,0 +1,20 @@
+<mdb-card style="margin-top:15px">
+    <!--Card image-->
+    <!--Card content-->
+    <mdb-card-body>
+
+        <!--Title-->
+        <mdb-card-title>
+            <h4>{{task.name}}</h4>
+        </mdb-card-title>
+
+        <!--Text-->
+        <mdb-card-text>
+            <p>{{task.description}}</p>
+            <p>{{task.dateAdded |  date:'dd.MM.yy, HH:mm'}}</p>
+        </mdb-card-text>
+
+        <button (click)="openEditProductModal()" mdbBtn color="primary" mdbWavesEffect>Edit</button>
+        <button (click)="deleteTask()" mdbBtn color="primary" mdbWavesEffect>Delete</button>
+    </mdb-card-body>
+</mdb-card>

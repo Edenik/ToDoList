@@ -1,0 +1,4 @@
+<div class="container">
+    <button type="button" mdbBtn color="primary" mdbWavesEffect (click)="openAddProductModal()">Add Task</button>
+    <app-task-card *ngFor="let task of tasks" [task]="task"  (delete)="deleteTask($event)"></app-task-card>
+</div>
